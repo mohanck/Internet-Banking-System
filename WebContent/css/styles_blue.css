@@ -1,0 +1,248 @@
+/* NON-MENU LINK COLORS */
+a:link, a:visited, a:active	{ color: #3366CC; text-decoration: none; }
+
+a:hover				{ color: #009900; text-decoration: none; }
+
+/* PAGE FONTS AND TITLES */
+
+/* THE NEXT LINE CONTROLS THE FONT SIZE ON ALL PAGES */
+
+.date-font	{ color: #000000; font: 10px verdana, arial, sans-serif; font-weight: bold; }
+
+#date-location	{ right: 10px; POSITION: absolute; top:28px; text-align: left; }
+
+
+/* SCROLLER LINK COLORS */
+
+a.scroller:link, a.scroller:visited, a.scroller:active	{ color: #3300FF; text-decoration: none; }
+
+a.scroller:hover					{ color: #0000FF; text-decoration: none; }
+
+
+
+
+a.sidelink:link, a.sidelink:visited, a.sidelink:active	{ color: #3366CC; text-decoration: none; }
+
+a.sidelink:hover					{ color: #009900; text-decoration: none; }
+
+
+
+
+
+/* START THE CODE FOR THE MENUS */
+
+/* IF YOU EDIT THE SUB MENU WIDTH - EDIT 160 IN 4 PLACES 
+
+ */
+
+/* menu ver 3.15 2009 */
+
+
+/* MENU OUTER TABLE - BACKGROUND & TOP & BOTTOM MENU BORDERS */
+
+.menutable 		{
+			background-image: url("../picts/gray/menu.gif");
+			background-color: #6083AD;/*Remaining color*/
+			white-space: nowrap;
+			width:100%;
+			border-top: #888888 1px solid;
+			border-bottom: #888888 1px solid;
+			padding: 0px;
+			margin: 0px;
+			}
+
+/* CODE FOR MENU 2ND OUTER TABLE */
+
+#menunav, #menunav ul 	{
+			float: left;
+			white-space: nowrap;
+			width: 100%;
+			list-style: none;
+			padding: 0px;
+			border: solid #000000;
+			border-width: 0px 0px 0px 0px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			margin: 0px 0px 0px 0px;
+			}
+
+/* TOP LEVEL MARGINS, FONT FACE & FONT COLORS & PADDING */
+
+#menunav a 		{
+			color: #EEEEEE;
+			font: 12px arial, sans-serif;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+			padding: 3px 5px 4px 5px;
+			width: auto;
+			display: block;
+			cursor: pointer;
+			}
+
+/* TOP LEVEL BACKROUND COLOR AND BORDERS - EDIT MENU IMAGES ALSO */
+
+#menunav li 		{
+			background-image: url("../picts/gray/menu.gif");
+			background-color:#6083AD;
+			border: solid #888888;
+			border-width: 0px 1px 0px 0px;	/* THIS IS A RIGHT BORDER */
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			float: left;
+			padding: 0;
+			}
+
+/* TOP LEVEL HOVER FONT COLOR */
+
+#menunav li a:hover	{
+			background-image: url("../picts/gray/menuon.gif");
+			color: #6083AD;
+			text-decoration: none;
+			cursor: pointer;
+			}
+
+/* TOP LEVEL HOVER BACKGROUND COLOR AND BORDERS - EDIT MENU IMAGES ALSO */
+
+#menunav li:hover, #menunav li.IEMhover
+			{
+			background-color: #B8B9BD;
+			background-image: url("../picts/gray/menuon.gif");
+			border: solid #888888;
+			border-width: 0px 1px 0px 0px;	/* THIS IS A RIGHT BORDER */
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			}
+
+/* SUB LEVEL FONT & FONT COLOR & PADDING */
+
+#menunav li ul a 	{
+			font: 11px verdana, arial, sans-serif;
+			color: #666666;
+			font-weight: normal;
+			text-decoration: none;
+			text-align: left;
+			padding: 4px 0px 4px 0px;
+			text-indent: 8px;
+			cursor: pointer;
+			}
+
+/* SUB LEVEL FONT HOVER COLOR */
+
+#menunav li ul a:hover 	{
+			background-image: none;
+			color: #000000;
+			text-decoration: none;
+			cursor: pointer;
+			}
+
+/* SUB LEVEL OUTER BORDER */
+
+#menunav li ul 		{
+			position: absolute;
+			left: -999em;
+			height: auto;
+			width: 160px;
+			border: solid #000000;
+			border-width: 1px 1px 1px 1px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			margin: 0;
+			}
+
+/* SUB LEVEL BACKGROUND COLOR & BORDER OPTION FOR EACH LINK */
+
+#menunav li ul li 	{
+			background-image: none;
+			background-color: #FFFFFF;
+			border: solid #C0C0C0;
+			border-width: 1px 0px 0px 0px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			}
+
+/* SUB LEVEL HOVER BACKGROUND AND BORDERS */
+
+#menunav li ul li:hover, #menunav li ul li.IEMhover
+			{
+			background-image: none;
+			background-color:#CCCCCCj;
+			border: solid #C0C0C0;
+			border-width: 1px 0px 0px 0px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			}
+
+/* SUB MENU WIDTH - ALSO EDIT TWO BELOW AND ONE ABOVE TO MATCH */
+
+#menunav li li {
+	padding-right: 0px;
+	width: 160px;
+}
+
+/* SUB MENU LINK WIDTH */
+
+#menunav li ul a {
+	width: 160px;
+}
+
+/* FOR 3rd LEVEL MENU LOCATION */
+
+#menunav li ul ul {
+	margin: -21px 0px 0px 160px;
+}
+
+#menunav li:hover ul ul, #menunav li:hover ul ul ul, #menunav li.IEMhover ul ul, #menunav li.IEMhover ul ul ul
+{ left: -999em; }
+
+#menunav li:hover ul, #menunav li li:hover ul, #menunav li li li:hover ul, #menunav li.IEMhover ul, #menunav li li.IEMhover ul, #menunav li li li.IEMhover ul
+{ left: auto; }
+
+
+/* FOR 3rd LEVEL ARROW */
+
+#menunav a.parent {
+	background: url(../picts/menu-arrow.gif) center right no-repeat;
+}
+
+#menunav a.parent:hover {
+	background: url(../picts/menu-arrow.gif) center right no-repeat;
+}
+
+
+
+#header_container {
+background-image:url(images/header_slice.gif);
+background-position:center top;
+background-repeat:repeat-x;
+ 
+margin:0 auto;
+padding:0;
+position:relative;
+}
+#customers
+{
+font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+width:76%;
+border-collapse:collapse;
+}
+#customers tr
+{
+background-color:#FFFFFF;
+color:#000000;
+text-align:center;
+}
+#customers td, #customers th 
+{
+font-size:0.9em;
+border:1px solid #949599;
+padding:3px 7px 2px 7px;
+}
+#customers th 
+{
+font-size:0.9em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#6083AD;
+color:#ffffff;
+}
+#customers tr.alt td 
+{
+color:#000000;
+background-color:#EEEEEE;
+}
